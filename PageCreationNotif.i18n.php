@@ -21,10 +21,11 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Nischayn22
+ * @author Shirayuki
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'page-creation-notif-desc' => '{{desc}}',
+	'page-creation-notif-desc' => '{{desc|name=Page Creation Notif|url=http://www.mediawiki.org/wiki/Extension:PageCreationNotif}}',
 	'page-creation-notification' => 'This message is a label for preferences to get notified by email on creation of new pages',
 	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page $1 in a wiki $2',
 	'page-creation-email-body' => 'This message is the body of the notification saying that a new page was created. Parameters:
@@ -54,12 +55,23 @@ $messages['fr'] = array(
 	'page-creation-email-body' => "Une nouvelle page $1 a été créée par l'utilisateur $2 à $3, la page peut être consultée à $4",
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'page-creation-notif-desc' => 'Mande na notificacion per mèssageria èlèctronica quand de pâges novèles sont fêtes',
+	'page-creation-notification' => 'Mè mandar un mèssâjo pendent la crèacion de pâges novèles',
+	'page-creation-email-subject' => 'Pâge novèla - $1 fêta lo $2',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
 $messages['ja'] = array(
 	'page-creation-notif-desc' => 'ページが作成されたら通知メールを送信する',
 	'page-creation-notification' => '新しいページが作成されたらメールを受け取る',
+	'page-creation-email-subject' => '新しいページ - $2に$1が作成されました',
+	'page-creation-email-body' => '利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。',
 );
 
 /** Colognian (Ripoarisch)
