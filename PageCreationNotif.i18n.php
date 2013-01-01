@@ -14,7 +14,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'page-creation-notif-desc'  => 'Sends e-mail notification when new pages are created',
-	'page-creation-notification' => 'Email me on creation of new pages',
+	'page-creation-notification' => 'E-mail me on creation of new pages',
 	'page-creation-email-subject' => 'New page - $1 created on $2',
 	'page-creation-email-body'  => 'A new page $1 has been created by user $2 at $3, the page can be viewed at $4',
 );
