@@ -24,21 +24,30 @@ class PageCreationNotifEmailer {
 		global $wgPCNSender, $wgPCNSenderName;
 
 		$usersEmail = self::getNotifUsersEmail();
-		$subject = wfMsgExt(
+		$subject = wfMessage(
 			'page-creation-email-subject',
-			'parse',
 			$article->getTitle()->getFullText(),
-			$GLOBALS['wgSitename']
-		);
-
-		$emailText = wfMsgExt(
-			'page-creation-email-body',
-			'parse',
-			$article->getTitle()->getFullText(),
-			$user->getName(),
 			$GLOBALS['wgSitename'],
+			$user->getName()
+		)->parse();
+
+		$emailHeader = wfMessage( 'page-creation-email-salute' )->parse() . '<br/><br/>' . 
+			wfMessage( 'page-creation-email-notif', $GLOBALS['wgSitename'] )->parse();
+
+		$emailBody = wfMessage(
+			'page-creation-email-body',
+			$article->getTitle()->getFullText(),
+			$user->getName()
+		)->parse();
+
+		$emailFooter = wfMessage(
+			'page-creation-email-seeUrl',
 			$article->getTitle()->getFullURL()
-		);
+		)->parse();
+
+		$emailPageText = wfMessage( 'page-creation-email-text' )->parse() . ':<br/>' . $article->getText();
+
+		$emailText = $emailHeader . ' ' . $emailBody . '<br/><br/>' . $emailFooter . '<br/><br/>' . $emailPageText;
 
 		UserMailer::send(
 			$usersEmail,

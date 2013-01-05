@@ -14,9 +14,13 @@ $messages = array();
  */
 $messages['en'] = array(
 	'page-creation-notif-desc'  => 'Sends e-mail notification when new pages are created',
-	'page-creation-notification' => 'E-mail me on creation of new pages',
-	'page-creation-email-subject' => 'New page - $1 created on $2',
-	'page-creation-email-body'  => 'A new page $1 has been created by user $2 at $3, the page can be viewed at $4',
+	'page-creation-notification' => 'E-mail me when a new page is created',
+	'page-creation-email-subject' => 'New page - $1 created on $2 by $3',
+	'page-creation-email-body'  => 'a new page $1 has been created by user $2.',
+	'page-creation-email-seeUrl' => 'You can see it at $1',
+	'page-creation-email-salute' => 'Hi,',
+	'page-creation-email-notif' => 'This is a notification from $1 that',
+	'page-creation-email-text' => 'The text of the page is '
 );
 
 /** Message documentation (Message documentation)
@@ -26,13 +30,15 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'page-creation-notif-desc' => '{{desc|name=Page Creation Notif|url=http://www.mediawiki.org/wiki/Extension:PageCreationNotif}}',
-	'page-creation-notification' => 'This message is a label for preferences to get notified by email on creation of new pages',
-	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page $1 in a wiki $2',
+	'page-creation-notification' => 'This message is a label for preferences to get notified by email on creation of a new page',
+	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page $1 in a wiki $2 by user $3',
 	'page-creation-email-body' => 'This message is the body of the notification saying that a new page was created. Parameters:
 * $1 is a page name
-* $2 is a user name
-* $3 is a site name
-* $4 is a link to the new page',
+* $2 is a user name',
+	'page-creation-email-seeUrl' => 'This message is a label that the new page can be seen at $1',
+	'page-creation-email-salute' => 'This message is a salutation',
+	'page-creation-email-notif' => 'This message explains that this email is a notification from site $1',
+	'page-creation-email-text' => 'This message is a label for the text of the page which appears after this message'
 );
 
 /** German (Deutsch)
