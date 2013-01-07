@@ -20,54 +20,53 @@ class PageCreationNotifEmailer {
 	 * @since 0.1
 	 *
 	 */
-	public static function notifyOnNewArticle( $article, $user ) {
+	public static function notifyOnNewArticle( $article, $creator ) {
 		global $wgPCNSender, $wgPCNSenderName;
 
-		$usersEmail = self::getNotifUsersEmail();
-		$subject = wfMessage(
-			'page-creation-email-subject',
-			$article->getTitle()->getFullText(),
-			$GLOBALS['wgSitename'],
-			$user->getName()
-		)->parse();
+		$users = self::getNotifUsers();
 
-		$emailHeader = wfMessage( 'page-creation-email-salute' )->parse() . '<br/><br/>' . 
-			wfMessage( 'page-creation-email-notif', $GLOBALS['wgSitename'] )->parse();
+		foreach( $users as $user ) {
 
-		$emailBody = wfMessage(
-			'page-creation-email-body',
-			$article->getTitle()->getFullText(),
-			$user->getName()
-		)->parse();
+			if( $user->getId() === $creator->getId() ) {
+				continue;
+			}
 
-		$emailFooter = wfMessage(
-			'page-creation-email-seeUrl',
-			$article->getTitle()->getFullURL()
-		)->parse();
+			$subject = wfMessage(
+				'page-creation-email-subject',
+				$article->getTitle()->getFullText(),
+				$GLOBALS['wgSitename'],
+				$creator->getName()
+			)->parse();
 
-		$emailPageText = wfMessage( 'page-creation-email-text' )->parse() . ':<br/>' . $article->getText();
+			$emailText = wfMessage(
+				'page-creation-email-body',
+				$user->getName(),
+				$article->getTitle()->getFullText(),
+				$creator->getName(),
+				$article->getTitle()->getFullURL(),
+				$article->getText()
+			)->parse();
 
-		$emailText = $emailHeader . ' ' . $emailBody . '<br/><br/>' . $emailFooter . '<br/><br/>' . $emailPageText;
-
-		UserMailer::send(
-			$usersEmail,
-			new MailAddress( $wgPCNSender, $wgPCNSenderName ),
-			$subject,
-			$emailText,
-			null,
-			'text/html; charset=ISO-8859-1'
-		);
-		// die silently ignoring the status message
+			UserMailer::send(
+				new MailAddress( $user ),
+				new MailAddress( $wgPCNSender, $wgPCNSenderName ),
+				$subject,
+				$emailText,
+				null,
+				'text/html; charset=ISO-8859-1'
+			);
+			// die silently ignoring the status message
+		}
 	}
 
 	/**
-	 * Get all the users and their e-mail addresses
+	 * Get all the users
 	 *
 	 * @since 0.1
 	 *
-	 * @return Array of String containing user's email addresses
+	 * @return Array of User objects
 	 */
-	public static function getNotifUsersEmail() {
+	public static function getNotifUsers() {
 		$dbr = wfGetDB( DB_SLAVE );
 
 		$rows = $dbr->select(
@@ -79,13 +78,13 @@ class PageCreationNotifEmailer {
 				'pcn_notify' => 1
 			)
 		);
-		
-		$usersEmail = array();
-		
+
+		$users = array();
+
 		foreach ( $rows as $row ) {
-			$usersEmail[] = new MailAddress( User::newFromId( $row->pcn_user_id ) );
+			$users[] = User::newFromId( intval( $row->pcn_user_id ) );
 		}
 
-		return $usersEmail;
+		return $users;
 	}
 }

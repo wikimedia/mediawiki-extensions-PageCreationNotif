@@ -16,11 +16,20 @@ $messages['en'] = array(
 	'page-creation-notif-desc'  => 'Sends e-mail notification when new pages are created',
 	'page-creation-notification' => 'E-mail me when a new page is created',
 	'page-creation-email-subject' => 'New page - $1 created on $2 by $3',
-	'page-creation-email-body'  => 'a new page $1 has been created by user $2.',
-	'page-creation-email-seeUrl' => 'You can see it at $1',
-	'page-creation-email-salute' => 'Hi,',
-	'page-creation-email-notif' => 'This is a notification from $1 that',
-	'page-creation-email-text' => 'The text of the page is '
+	'page-creation-email-body'  => 'Dear $1,
+
+This is a notification from {{SITENAME}} that a new page $2 has been {{Gender:$3|created}} by user $3.
+
+You can see it at
+$4
+
+The text of the page is:
+$5
+
+Your friendly {{SITENAME}} notification system.
+
+To change your e-mail notification settings,visit 
+{{canonicalurl:{{#special:Preferences}}}}',
 );
 
 /** Message documentation (Message documentation)
@@ -33,12 +42,11 @@ $messages['qqq'] = array(
 	'page-creation-notification' => 'This message is a label for preferences to get notified by email on creation of a new page',
 	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page $1 in a wiki $2 by user $3',
 	'page-creation-email-body' => 'This message is the body of the notification saying that a new page was created. Parameters:
-* $1 is a page name
-* $2 is a user name',
-	'page-creation-email-seeUrl' => 'This message is a label that the new page can be seen at $1',
-	'page-creation-email-salute' => 'This message is a salutation',
-	'page-creation-email-notif' => 'This message explains that this email is a notification from site $1',
-	'page-creation-email-text' => 'This message is a label for the text of the page which appears after this message'
+* $1 is a user name
+* $2 is a page name
+* $3 is a user name of page creator
+* $4 is the URL of the new page
+* $5 is the text of the page',
 );
 
 /** German (Deutsch)
