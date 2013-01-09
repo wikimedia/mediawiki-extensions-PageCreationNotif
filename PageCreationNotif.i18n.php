@@ -54,9 +54,22 @@ $messages['qqq'] = array(
  */
 $messages['de'] = array(
 	'page-creation-notif-desc' => 'Ermöglicht beim Erstellen neuer Seiten das Senden von E-Mail-Benachrichtigungen',
-	'page-creation-notification' => 'Mich per E-Mail benachrichtigen, wenn neue Seiten erstellt werden',
-	'page-creation-email-subject' => 'Neue Seite – $1 erstellt am $2',
-	'page-creation-email-body' => 'Die neue Seite „$1“ wurde am $3 von $2 erstellt. Die Seite kann unter $4 betrachtet werden.',
+	'page-creation-notification' => 'Mich per E-Mail benachrichtigen, wenn eine neue Seite erstellt wurde',
+	'page-creation-email-subject' => 'Neue Seite – $1 erstellt am $2 von $3',
+	'page-creation-email-body' => 'Hallo $1!
+
+Dies ist eine Benachrichtigung von {{SITENAME}}, um dir mitzuteilen, dass die neue Seite „$2“ {{GENDER:$3|vom Benutzer|von der Benutzerin}} $3 erstellt wurde.
+
+Du kannst sie hier sehen:
+$4
+
+Der Text der Seite ist:
+$5
+
+Dein freundliches {{SITENAME}}-Benachrichtigungssystem.
+
+Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
+{{canonicalurl:{{#special:Preferences}}}}',
 );
 
 /** French (français)
@@ -78,14 +91,45 @@ $messages['frp'] = array(
 	'page-creation-email-subject' => 'Pâge novèla - $1 fêta lo $2',
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'page-creation-notif-desc' => 'Envía unha notificación por correo electrónico cando se crean novas páxinas',
+	'page-creation-notification' => 'Enviádeme un correo electrónico cando se cree unha páxina nova',
+	'page-creation-email-subject' => 'Nova páxina - "$1" creada por $3 o $2',
+	'page-creation-email-body' => 'Boas, $1:
+
+Esta é unha notificación de {{SITENAME}} para informar de que {{GENDER:$3|o usuario|a usuaria}} $3 creou a páxina "$2".
+
+Pode botarlle unha ollada en
+$4
+
+O texto da páxina é:
+$5
+
+O sistema de notificación de {{SITENAME}}.
+
+Para modificar as opcións de notificación por correo electrónico, visite
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'page-creation-notif-desc' => 'Invia una e-mail di notifica quando vengono creati nuove pagine',
+	'page-creation-email-subject' => 'Nuova pagina - $1 creata su $2 da $3',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
 $messages['ja'] = array(
 	'page-creation-notif-desc' => 'ページが作成されたら通知メールを送信する',
 	'page-creation-notification' => '新しいページが作成されたらメールを受け取る',
-	'page-creation-email-subject' => '新しいページ - $2に$1が作成されました',
-	'page-creation-email-body' => '利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。',
+	'page-creation-email-subject' => '新しいページ - $3が$2に$1を作成しました',
+	'page-creation-email-body' => '利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。', # Fuzzy
 );
 
 /** Colognian (Ripoarisch)
