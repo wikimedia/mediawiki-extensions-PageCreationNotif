@@ -28,7 +28,7 @@ $5
 
 Your friendly {{SITENAME}} notification system.
 
-To change your e-mail notification settings,visit 
+To change your e-mail notification settings, visit
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
