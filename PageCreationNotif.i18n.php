@@ -49,6 +49,14 @@ $messages['qqq'] = array(
 * $5 is the text of the page',
 );
 
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'page-creation-notif-desc' => 'Дасылае e-mail-абвестку па стварэньні новых старонак',
+	'page-creation-notification' => 'Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
@@ -77,9 +85,22 @@ Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
  */
 $messages['fr'] = array(
 	'page-creation-notif-desc' => 'Envoie une notification par courriel quand de nouvelles pages sont créées',
-	'page-creation-notification' => "M'envoyer un courriel lors de la création de nouvelles pages",
-	'page-creation-email-subject' => 'Nouvelle page - $1 créé le $2',
-	'page-creation-email-body' => "Une nouvelle page $1 a été créée par l'utilisateur $2 à $3, la page peut être consultée à $4",
+	'page-creation-notification' => "M'envoyer un courriel quand une nouvelle page est créée",
+	'page-creation-email-subject' => 'Nouvelle page - $1 créée le $2 par $3',
+	'page-creation-email-body' => "Cher $1,
+
+Ceci est une notification de {{SITENAME}} qu'une nouvelle page $2 a été {{Gender:$3|créée}} par l'utilisateur $3.
+
+Vous pouvez la voir ici
+$4
+
+Le contenu de la page est:
+$5
+
+Le système de notification de {{SITENAME}}.
+
+Pour modifier vos paramètres de notification par courriel, allez sur
+{{canonicalurl:{{#special:Preferences}}}}",
 );
 
 /** Franco-Provençal (arpetan)
@@ -154,9 +175,22 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'page-creation-notif-desc' => 'Испраќа известувања по е-пошта кога ќе се создадат нови страници',
-	'page-creation-notification' => 'Известувај ме по е-пошта кога ќе се создаваат нови страници',
-	'page-creation-email-subject' => 'Нова страница - Создадена „$1“ на $2',
-	'page-creation-email-body' => 'Корисникот $2 создаде нова страница „$1“ на $3. Можете да ја погледате на $4',
+	'page-creation-notification' => 'Известувај ме по е-пошта кога некој ќе создаде нова страница',
+	'page-creation-email-subject' => 'Нова страница - На $2 создадена страницата „$1“ од $3',
+	'page-creation-email-body' => '{{Gender:$3|Почитуван|Почитуванa|Почитуван}} $1,
+
+Ве известуваме дека на {{SITENAME}} е создадена новата страница $2 од корисникот $3.
+
+Можете да ја погледате на
+$4
+
+Текстот на страницата е:
+$5
+
+Вашиот известителен систем на {{SITENAME}}
+
+Сако сакате да ги измените поставките за известувања, појдете на:
+{{canonicalurl:{{#special:Preferences}}}}',
 );
 
 /** Dutch (Nederlands)
@@ -174,7 +208,7 @@ $messages['nl'] = array(
  */
 $messages['pms'] = array(
 	'page-creation-notif-desc' => "A manda n'e-mail ëd notìfica quand che neuve pagine a son creà",
-	'page-creation-notification' => 'Mandme un corel creand neuve pagine',
-	'page-creation-email-subject' => 'Pagine neuve - $1 creà dzor $2',
-	'page-creation-email-body' => "Na pagina neuva $1 a l'é stàita creà da l'utent $2 a $3, la pagina a peul esse vëddùa a $4",
+	'page-creation-notification' => "Mandme un corel quand na neuva pagina a l'é creà",
+	'page-creation-email-subject' => 'Pagine neuve - $1 creà dzor $2 da $3',
+	'page-creation-email-body' => "Na pagina neuva $1 a l'é stàita creà da l'utent $2 a $3, la pagina a peul esse vëddùa a $4", # Fuzzy
 );
