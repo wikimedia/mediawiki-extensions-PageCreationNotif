@@ -40,7 +40,10 @@ To change your e-mail notification settings, visit
 $messages['qqq'] = array(
 	'page-creation-notif-desc' => '{{desc|name=Page Creation Notif|url=http://www.mediawiki.org/wiki/Extension:PageCreationNotif}}',
 	'page-creation-notification' => 'This message is a label for preferences to get notified by email on creation of a new page',
-	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page $1 in a wiki $2 by user $3',
+	'page-creation-email-subject' => 'This message is used as the subject for emails on creation of a new page. Parameters:
+* $1 is a page name
+* $2 is a wiki name
+* $3 is a user name',
 	'page-creation-email-body' => 'This message is the body of the notification saying that a new page was created. Parameters:
 * $1 is a user name
 * $2 is a page name
@@ -198,9 +201,9 @@ $5
  */
 $messages['nl'] = array(
 	'page-creation-notif-desc' => "Stuurt een e-mail als nieuwe pagina's worden aangemaakt",
-	'page-creation-notification' => "Mij e-mailen als nieuwe pagina's worden aangemaakt",
-	'page-creation-email-subject' => 'Nieuwe pagina - $1 aangemaakt in $2',
-	'page-creation-email-body' => 'De pagina $1 is aangemaakt door $2 op $3. Bekijk de pagina via de volgende koppeling: $4',
+	'page-creation-notification' => 'Mij e-mailen als een nieuwe pagina wordt aangemaakt',
+	'page-creation-email-subject' => 'Nieuwe pagina - $1 aangemaakt in $2 door {{GENDER:$3|$3}}',
+	'page-creation-email-body' => 'De pagina $1 is aangemaakt door $2 op $3. Bekijk de pagina via de volgende koppeling: $4', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
@@ -210,5 +213,17 @@ $messages['pms'] = array(
 	'page-creation-notif-desc' => "A manda n'e-mail ëd notìfica quand che neuve pagine a son creà",
 	'page-creation-notification' => "Mandme un corel quand na neuva pagina a l'é creà",
 	'page-creation-email-subject' => 'Pagine neuve - $1 creà dzor $2 da $3',
-	'page-creation-email-body' => "Na pagina neuva $1 a l'é stàita creà da l'utent $2 a $3, la pagina a peul esse vëddùa a $4", # Fuzzy
+	'page-creation-email-body' => "Car $1,
+
+Costa a l'é na notìfica da {{SITENAME}} che na pagina neuva $2 a l'é stàita {{Gender:$3|creà}} da l'utent $3.
+
+It peule vëddla a 
+$4
+
+El test ëd la pagina a l'é:
+$5
+
+Tò sistem ëd notificassion amichévol ëd {{SITENAME}}.
+
+Për cangé toe ampostassion ëd notìfica email, vìsita {{canonicalurl:{{#special:Preferences}}}}",
 );
