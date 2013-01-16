@@ -161,9 +161,9 @@ $messages['ja'] = array(
  */
 $messages['ksh'] = array(
 	'page-creation-notif-desc' => 'Scheck en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat wood.',
-	'page-creation-notification' => 'Scheck mer en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat weed.',
-	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat',
-	'page-creation-email-body' => 'Neu Sigg „$1“ wood {{GENDER:$2|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:$3}}}} aanjelaat un kann onger $4 beloort wääde.',
+	'page-creation-notification' => 'Scheck mer en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat weed.', # Fuzzy
+	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat {{GENDER:$2|vum|vum|vumm Metmaacher|vun dä|vum}} $3',
+	'page-creation-email-body' => 'Neu Sigg „$1“ wood {{GENDER:$2|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:$3}}}} aanjelaat un kann onger $4 beloort wääde.', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
