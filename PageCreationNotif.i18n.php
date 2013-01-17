@@ -143,6 +143,7 @@ Para modificar as opcións de notificación por correo electrónico, visite
  */
 $messages['it'] = array(
 	'page-creation-notif-desc' => 'Invia una e-mail di notifica quando vengono creati nuove pagine',
+	'page-creation-notification' => 'Inviami una e-mail quando una nuova pagina viene creata',
 	'page-creation-email-subject' => 'Nuova pagina - $1 creata su $2 da $3',
 );
 
