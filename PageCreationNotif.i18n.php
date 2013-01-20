@@ -157,6 +157,29 @@ $messages['ja'] = array(
 	'page-creation-email-body' => '利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。', # Fuzzy
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'page-creation-notif-desc' => '새 문서가 만들어질 때 이메일 알림을 보냅니다',
+	'page-creation-notification' => '새 문서가 만들어질 때 내게 이메일 보내기',
+	'page-creation-email-subject' => '새 문서 - $3 사용자가 $2에 만든 $1',
+	'page-creation-email-body' => '$1님,
+
+{{SITENAME}}에서 $3 사용자가 $2 새 문서를 {{Gender:$3|만들었음}}을 알립니다.
+
+다음에서 볼 수 있습니다
+$4
+
+문서의 텍스트는 다음과 같습니다:
+$5
+
+친절한 {{SITENAME}} 알림 시스템입니다.
+
+이메일 알림 설정을 바꾸려면 다음을 방문하세요
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
