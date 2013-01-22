@@ -145,6 +145,22 @@ $messages['it'] = array(
 	'page-creation-notif-desc' => 'Invia una e-mail di notifica quando vengono creati nuove pagine',
 	'page-creation-notification' => 'Inviami una e-mail quando una nuova pagina viene creata',
 	'page-creation-email-subject' => 'Nuova pagina - $1 creata su $2 da $3',
+	'page-creation-email-body' => "Gentile $1,
+
+Questa è una notifica da {{SITENAME}} che una nuova pagina $2 è stata {{Gender:$3|creata}} dall'utente $3.
+
+Puoi vederla qui
+$4
+
+Il testo della pagina è:
+$5
+
+
+             Il sistema di notifica di {{SITENAME}}, al tuo servizio
+
+--
+Per modificare le impostazioni delle notifiche via posta elettronica, visita 
+{{canonicalurl:{{#special:Preferences}}}}",
 );
 
 /** Japanese (日本語)
