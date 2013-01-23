@@ -267,3 +267,26 @@ Tò sistem ëd notificassion amichévol ëd {{SITENAME}}.
 
 Për cangé toe ampostassion ëd notìfica email, vìsita {{canonicalurl:{{#special:Preferences}}}}",
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'page-creation-notif-desc' => '当创建新页面时发送电子邮件通知',
+	'page-creation-notification' => '当创建了一个新页面时发电子邮件给我',
+	'page-creation-email-subject' => '新的页面 - $1 由 $3 创建在 $2',
+	'page-creation-email-body' => '您好 $1，
+
+本通知来自 {{SITENAME}}，一个新页面 $2 已被{{Gender:$3|创建}}由用户 $3。
+
+您可以看到它在
+$4
+
+该页面的文本是：
+$5
+
+您的友好的{{SITENAME}}通知系统。
+
+要更改您的电子邮件通知设置，请访问
+{{canonicalurl:{{#special:Preferences}}}}',
+);
