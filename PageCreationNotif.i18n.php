@@ -268,6 +268,29 @@ Tò sistem ëd notificassion amichévol ëd {{SITENAME}}.
 Për cangé toe ampostassion ëd notìfica email, vìsita {{canonicalurl:{{#special:Preferences}}}}",
 );
 
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'page-creation-notif-desc' => 'Відправляє повідомлення на електронну пошту, коли створюються нові сторінки',
+	'page-creation-notification' => 'Написати мені на електронну пошту, коли створюється нова сторінка',
+	'page-creation-email-subject' => '$3 створив нову сторінку у $2 — $1',
+	'page-creation-email-body' => 'Шановний $1,
+
+Це сповіщення з проекту {{SITENAME}} про те, що було {{Gender:$3|створено}} нову сторінку $2 користувачем $3.
+
+Ви можете переглянути її
+$4
+
+Текст сторінки:
+$5
+
+Щиро Ваша, система сповіщення {{SITENAME}}.
+
+Щоб змінити налаштування e-mail сповіщень, зайдіть на 
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Yfdyh000
  */
