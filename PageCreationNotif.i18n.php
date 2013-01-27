@@ -111,8 +111,8 @@ Pour modifier vos paramètres de notification par courriel, allez sur
  */
 $messages['frp'] = array(
 	'page-creation-notif-desc' => 'Mande na notificacion per mèssageria èlèctronica quand de pâges novèles sont fêtes',
-	'page-creation-notification' => 'Mè mandar un mèssâjo pendent la crèacion de pâges novèles',
-	'page-creation-email-subject' => 'Pâge novèla - $1 fêta lo $2',
+	'page-creation-notification' => 'Mè mandar un mèssâjo pendent la crèacion de pâges novèles', # Fuzzy
+	'page-creation-email-subject' => 'Pâge novèla - $1 fêta lo $2', # Fuzzy
 );
 
 /** Galician (galego)
@@ -210,7 +210,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'page-creation-notification' => 'Mir eng Mail schécke wann nei Säiten ugeluecht ginn',
+	'page-creation-notification' => 'Mir eng Mail schécke wann nei Säiten ugeluecht ginn', # Fuzzy
 );
 
 /** Macedonian (македонски)
