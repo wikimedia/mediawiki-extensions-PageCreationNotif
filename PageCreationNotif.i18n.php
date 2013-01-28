@@ -243,7 +243,19 @@ $messages['nl'] = array(
 	'page-creation-notif-desc' => "Stuurt een e-mail als nieuwe pagina's worden aangemaakt",
 	'page-creation-notification' => 'Mij e-mailen als een nieuwe pagina wordt aangemaakt',
 	'page-creation-email-subject' => 'Nieuwe pagina - $1 aangemaakt in $2 door {{GENDER:$3|$3}}',
-	'page-creation-email-body' => 'De pagina $1 is aangemaakt door $2 op $3. Bekijk de pagina via de volgende koppeling: $4', # Fuzzy
+	'page-creation-email-body' => 'Beste $1,
+
+Dit is een melding van {{SITENAME}}. De pagina $2 is aangemaakt door {{GENDER:$3|gebruiker}} $3.
+
+U kunt deze bekijken via de volgende koppeling:
+$4
+
+De tekst van de pagina is:
+$5
+
+Het meldingensysteeem van {{SITENAME}}.
+
+Op {{canonicalurl:{{#special:Preferences}}}} kunt u uw instellingen voor meldingen aanpassen.',
 );
 
 /** Piedmontese (Piemontèis)
