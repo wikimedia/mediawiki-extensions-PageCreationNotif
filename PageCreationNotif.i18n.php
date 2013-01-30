@@ -83,6 +83,15 @@ Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'page-creation-notif-desc' => 'Envía una notificación por correo electrónico cuando se crean páginas nuevas',
+	'page-creation-notification' => 'Enviarme un mensaje cuando se cree una página nueva',
+	'page-creation-email-subject' => 'Página nueva – $1 creada el $2 por $3',
+);
+
 /** French (français)
  * @author Gomoko
  */
