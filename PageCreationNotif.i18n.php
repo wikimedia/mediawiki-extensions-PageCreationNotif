@@ -219,7 +219,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'page-creation-notification' => 'Mir eng Mail schécke wann nei Säiten ugeluecht ginn', # Fuzzy
+	'page-creation-notification' => 'Mir eng E-Mail schécke wann eng nei Säiten ugeluecht gëtt',
 );
 
 /** Macedonian (македонски)
