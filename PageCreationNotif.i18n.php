@@ -52,6 +52,29 @@ $messages['qqq'] = array(
 * $5 is the text of the page',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'page-creation-notif-desc' => 'Unvia un avisu per corréu electrónicu cuando se creen páxines nueves',
+	'page-creation-notification' => 'Unviame un corréu cuando se cree una páxina nueva',
+	'page-creation-email-subject' => 'Páxina nueva – $1 creada el $2 por $3',
+	'page-creation-email-body' => 'Bones, $1:
+
+Esti ye un avisu de {{SITENAME}} para informar de que {{GENDER:$3|l\'usuariu|la usuaria}} $3 creó la páxina "$2".
+
+Pue vela en
+$4
+
+El testu de la páxina ye:
+$5
+
+L\'amistosu sistema d\'avisu de {{SITENAME}}.
+
+Pa camudar les preferencies d\'avisu per corréu electrónicu, visite
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
