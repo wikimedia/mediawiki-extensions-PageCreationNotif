@@ -242,7 +242,9 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'page-creation-notif-desc' => 'Schéckt eng Informatioun per e-Mail wann e nei Säiten ugeluecht ginn',
 	'page-creation-notification' => 'Mir eng E-Mail schécke wann eng nei Säiten ugeluecht gëtt',
+	'page-creation-email-subject' => 'Nei Säit - $1 ugeluecht op $2 vum $3',
 );
 
 /** Macedonian (македонски)
