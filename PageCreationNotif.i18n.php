@@ -83,6 +83,13 @@ $messages['be-tarask'] = array(
 	'page-creation-notification' => 'Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'page-creation-notification' => 'Kas ur postel din pa vez krouet ur bajenn nevez',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
