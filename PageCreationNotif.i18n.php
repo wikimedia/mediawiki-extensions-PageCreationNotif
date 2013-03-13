@@ -300,25 +300,27 @@ Op {{canonicalurl:{{#special:Preferences}}}} kunt u uw instellingen voor melding
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'page-creation-notif-desc' => "A manda n'e-mail ëd notìfica quand che neuve pagine a son creà",
-	'page-creation-notification' => "Mandme un corel quand na neuva pagina a l'é creà",
-	'page-creation-email-subject' => 'Pagine neuve - $1 creà dzor $2 da $3',
+	'page-creation-notif-desc' => 'A manda un mëssagi ëd notìfica quand che ëd neuve pàgine a son creà',
+	'page-creation-notification' => "Mandeme un mëssagi quand na neuva pàgina a l'é creà",
+	'page-creation-email-subject' => 'Pàgine neuva - $1 creà dzor $2 da $3',
 	'page-creation-email-body' => "Car $1,
 
-Costa a l'é na notìfica da {{SITENAME}} che na pagina neuva $2 a l'é stàita {{Gender:$3|creà}} da l'utent $3.
+Costa a l'é na notìfica da {{SITENAME}} che na pàgina neuva $2 a l'é stàita {{Gender:$3|creà}} da l'utent $3.
 
-It peule vëddla a 
+A peul vëddla a 
 $4
 
-El test ëd la pagina a l'é:
+Ël test ëd la pàgina a l'é:
 $5
 
-Tò sistem ëd notificassion amichévol ëd {{SITENAME}}.
+Sò sistema ëd notificassion amichévol ëd {{SITENAME}}.
 
-Për cangé toe ampostassion ëd notìfica email, vìsita {{canonicalurl:{{#special:Preferences}}}}",
+Për modifiché soe ampostassion ëd notìfica për pòsta eletrònica, ch'a vìsita
+{{canonicalurl:{{#special:Preferences}}}}",
 );
 
 /** Ukrainian (українська)
