@@ -113,6 +113,29 @@ Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'page-creation-notif-desc' => 'Sćelo e-mailowu powěźeńku, gaž se nowe boki napóraju',
+	'page-creation-notification' => 'E-mail pósłaś, gaž se nowy bok napórajo',
+	'page-creation-email-subject' => 'Nowy bok - $1 jo se na $2 wót $3 napórał',
+	'page-creation-email-body' => 'Witaj $1,
+
+To jo zdźělenje wót {{GRAMMAR:genitiw|{{SITENAME}}}}, až wužywaŕ $3 jo {{GENDER:$3|napórał|napórała}} nowy bok $2.
+
+Móžoš jen how wiźeś
+$4
+
+Tekst boka jo:
+$5
+
+Twój pśijaśelny zdźěleński system projekta {{SITENAME}}.
+
+Aby swóje nastajenja za e-mailowe zdźělenje změnił, woglědaj se k
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  */
@@ -174,6 +197,29 @@ $5
 O sistema de notificación de {{SITENAME}}.
 
 Para modificar as opcións de notificación por correo electrónico, visite
+{{canonicalurl:{{#special:Preferences}}}}',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'page-creation-notif-desc' => 'Sćele e-mejlowe zdźělenje, hdyž so nowe strony wutworjeja',
+	'page-creation-notification' => 'E-mejlku pósłać, hdyž so nowa strona wutworja',
+	'page-creation-email-subject' => 'Nowa strona - $1 je so na $2 wot $3 wutworił',
+	'page-creation-email-body' => 'Witaj $1,
+
+To je zdźělenje wot {{GRAMMAR:genitiw|{{SITENAME}}}}, zo je wužiwar $3 nowu stronu $2 {{GENDER:$3|wutworił|wutworiła}}.
+
+Móžeš ju tu widźeć
+$4
+
+Tekst strony je:
+$5
+
+Twój přećelski zdźělenski system projekta {{SITENAME}}.
+
+Zo by swoje nastajenja za e-mejlowe zdźělenje změnił, wopytaj
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
