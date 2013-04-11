@@ -91,6 +91,7 @@ $messages['br'] = array(
 );
 
 /** German (Deutsch)
+ * @author Geitost
  * @author Metalhead64
  */
 $messages['de'] = array(
@@ -110,7 +111,47 @@ $5
 Dein freundliches {{SITENAME}}-Benachrichtigungssystem.
 
 Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
-{{canonicalurl:{{#special:Preferences}}}}',
+{{canonicalurl:{{#special:Preferences}}}}.',
+);
+
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'page-creation-email-body' => 'Hallo $1!
+
+Dies ist eine Benachrichtigung von {{SITENAME}}, um dir mitzuteilen, dass die neue Seite «$2» {{GENDER:$3|vom Benutzer|von der Benutzerin}} $3 erstellt wurde.
+
+Du kannst sie hier sehen:
+$4
+
+Der Text der Seite ist:
+$5
+
+Dein freundliches {{SITENAME}}-Benachrichtigungssystem.
+
+Um deine E-Mail-Benachrichtigungseinstellungen zu ändern, besuche bitte
+{{canonicalurl:{{#special:Preferences}}}}.',
+);
+
+/** German (formal address) (Deutsch (Sie-Form)‎)
+ * @author Geitost
+ */
+$messages['de-formal'] = array(
+	'page-creation-email-body' => 'Hallo $1!
+
+Dies ist eine Benachrichtigung von {{SITENAME}}, um Ihnen mitzuteilen, dass die neue Seite „$2“ {{GENDER:$3|vom Benutzer|von der Benutzerin}} $3 erstellt wurde.
+
+Sie können sie hier sehen:
+$4
+
+Der Text der Seite ist:
+$5
+
+Ihr freundliches {{SITENAME}}-Benachrichtigungssystem.
+
+Um Ihre E-Mail-Benachrichtigungseinstellungen zu ändern, besuchen Sie bitte
+{{canonicalurl:{{#special:Preferences}}}}.',
 );
 
 /** Lower Sorbian (dolnoserbski)
