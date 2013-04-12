@@ -410,6 +410,14 @@ Për modifiché soe ampostassion ëd notìfica për pòsta eletrònica, ch'a vì
 {{canonicalurl:{{#special:Preferences}}}}",
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'page-creation-notification' => "Manneme 'na mail quanne 'na pàgena nove avène ccrejate",
+	'page-creation-email-subject' => 'Pàgena nove - $1 ccrejate sus a $2 da $3',
+);
+
 /** Ukrainian (українська)
  * @author Ата
  */
