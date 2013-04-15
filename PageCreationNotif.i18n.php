@@ -327,9 +327,18 @@ $5
  */
 $messages['ksh'] = array(
 	'page-creation-notif-desc' => 'Scheck en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat wood.',
-	'page-creation-notification' => 'Scheck mer en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat weed.', # Fuzzy
+	'page-creation-notification' => 'Scheck mer en <i lang="en">e-mail</i>, wann en neuje Sigg aanjelaat weed.',
 	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat {{GENDER:$2|vum|vum|vumm Metmaacher|vun dä|vum}} $3',
-	'page-creation-email-body' => 'Neu Sigg „$1“ wood {{GENDER:$2|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:$3}}}} aanjelaat un kann onger $4 beloort wääde.', # Fuzzy
+	'page-creation-email-body' => 'Leeven $1,
+
+En neu Sigg „$2“ wood {{GENDER:$3|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:$3}}}} aanjelaat un kann onger $4 beloort wääde. Dat hehh schteiht drop:
+
+$5
+
+Enne schööne Jrohß vom {{GRAMMAR:Dative|{{ucfirst:$3}}}} 
+
+Wann De jät draan änderewells, dat De Nohreeschte, wi di heh kreß, jangk op di Websigg heh:
+{{canonicalurl:{{#special:Preferences}}', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
