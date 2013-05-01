@@ -331,13 +331,13 @@ $messages['ksh'] = array(
 	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat {{GENDER:$2|vum|vum|vumm Metmaacher|vun dä|vum}} $3',
 	'page-creation-email-body' => 'Leeven $1,
 
-En neu Sigg „$2“ wood {{GENDER:$3|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:$3}}}} aanjelaat un kann onger $4 beloort wääde. Dat hehh schteiht drop:
+En neu Sigg „$2“ wood {{GENDER:$3|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:{{SITENAME}}}}}} aanjelaat un kann onger $4 beloort wääde. Dat hehh schteiht drop:
 
 $5
 
-Enne schööne Jrohß vom {{GRAMMAR:Dative|{{ucfirst:$3}}}} 
+Enne schööne Jrohß vom {{GRAMMAR:Dative|{{ucfirst:{{SITENAME}}}}}} 
 
-Wann De jät draan änderewells, dat De Nohreeschte, wi di heh kreß, jangk op di Websigg heh:
+Wann De jät draan ändere wells, dat De Nohreeschte, wi di heh kreß, jangk op di Websigg heh:
 {{canonicalurl:{{#special:Preferences}}', # Fuzzy
 );
 
