@@ -423,6 +423,7 @@ Për modifiché soe ampostassion ëd notìfica për pòsta eletrònica, ch'a vì
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'page-creation-notif-desc' => "Manne 'na mail de notifiche quanne le pàggene nuève avènene ccrejate",
 	'page-creation-notification' => "Manneme 'na mail quanne 'na pàgena nove avène ccrejate",
 	'page-creation-email-subject' => 'Pàgena nove - $1 ccrejate sus a $2 da $3',
 );
