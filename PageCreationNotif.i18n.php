@@ -426,6 +426,19 @@ $messages['roa-tara'] = array(
 	'page-creation-notif-desc' => "Manne 'na mail de notifiche quanne le pàggene nuève avènene ccrejate",
 	'page-creation-notification' => "Manneme 'na mail quanne 'na pàgena nove avène ccrejate",
 	'page-creation-email-subject' => 'Pàgena nove - $1 ccrejate sus a $2 da $3',
+	'page-creation-email-body' => "Care $1,
+
+Queste jè 'na notifiche da {{SITENAME}} ca 'na pàgena nove $2 ha state {{Gender:$3|ccrejate}} da l'utende $3.
+
+Tu 'a puè 'ndrucà sus a
+$4
+
+'U teste d'a pàgene jè:
+$5
+
+Statte bbuène, 'u sisteme de notifiche de {{SITENAME}}.
+
+Pe cangià le 'mbostaziune de le notifiche cu l'email, vèje a {{canonicalurl:{{#special:Preferences}}}}",
 );
 
 /** Ukrainian (українська)
