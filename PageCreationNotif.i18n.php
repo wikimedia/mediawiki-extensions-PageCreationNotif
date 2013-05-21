@@ -335,10 +335,10 @@ En neu Sigg „$2“ wood {{GENDER:$3|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{
 
 $5
 
-Enne schööne Jrohß vom {{GRAMMAR:Dative|{{ucfirst:{{SITENAME}}}}}} 
+Enne schööne Jrohß vom {{GRAMMAR:Dative|{{ucfirst:{{SITENAME}}}}}}
 
 Wann De jät draan ändere wells, dat De Nohreeschte, wi di heh kreß, jangk op di Websigg heh:
-{{canonicalurl:{{#special:Preferences}}', # Fuzzy
+{{canonicalurl:{{#special:Preferences}}}}',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
