@@ -15,10 +15,10 @@ $messages = array();
 $messages['en'] = array(
 	'page-creation-notif-desc'  => 'Sends e-mail notification when new pages are created',
 	'page-creation-notification' => 'E-mail me when a new page is created',
-	'page-creation-email-subject' => 'New page - $1 created on $2 by $3',
+	'page-creation-email-subject' => 'New page – $1 {{GENDER:$3|created}} on $2 by $3',
 	'page-creation-email-body'  => 'Dear $1,
 
-This is a notification from {{SITENAME}} that a new page $2 has been {{Gender:$3|created}} by user $3.
+This is a notification from {{SITENAME}} that a new page $2 has been {{GENDER:$3|created}} by user $3.
 
 You can see it at
 $4
