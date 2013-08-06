@@ -97,7 +97,7 @@ $messages['br'] = array(
 $messages['de'] = array(
 	'page-creation-notif-desc' => 'Ermöglicht beim Erstellen neuer Seiten das Senden von E-Mail-Benachrichtigungen',
 	'page-creation-notification' => 'Mich per E-Mail benachrichtigen, wenn eine neue Seite erstellt wurde',
-	'page-creation-email-subject' => 'Neue Seite – $1 erstellt am $2 von $3',
+	'page-creation-email-subject' => 'Neue Seite – $1 {{GENDER:$3|erstellt}} auf $2 von $3',
 	'page-creation-email-body' => 'Hallo $1!
 
 Dies ist eine Benachrichtigung von {{SITENAME}}, um dir mitzuteilen, dass die neue Seite „$2“ {{GENDER:$3|vom Benutzer|von der Benutzerin}} $3 erstellt wurde.
@@ -192,7 +192,7 @@ $messages['es'] = array(
 $messages['fr'] = array(
 	'page-creation-notif-desc' => 'Envoie une notification par courriel quand de nouvelles pages sont créées',
 	'page-creation-notification' => "M'envoyer un courriel quand une nouvelle page est créée",
-	'page-creation-email-subject' => 'Nouvelle page - $1 créée le $2 par $3',
+	'page-creation-email-subject' => 'Nouvelle page – $1 {{GENDER:$3|créée}} le $2 par $3',
 	'page-creation-email-body' => "Cher $1,
 
 Ceci est une notification de {{SITENAME}} qu'une nouvelle page $2 a été {{Gender:$3|créée}} par l'utilisateur $3.
@@ -224,7 +224,7 @@ $messages['frp'] = array(
 $messages['gl'] = array(
 	'page-creation-notif-desc' => 'Envía unha notificación por correo electrónico cando se crean novas páxinas',
 	'page-creation-notification' => 'Enviádeme un correo electrónico cando se cree unha páxina nova',
-	'page-creation-email-subject' => 'Nova páxina - "$1" creada por $3 o $2',
+	'page-creation-email-subject' => 'Nova páxina – "$1" {{GENDER:$3|creada}} en $2 por $3',
 	'page-creation-email-body' => 'Boas, $1:
 
 Esta é unha notificación de {{SITENAME}} para informar de que {{GENDER:$3|o usuario|a usuaria}} $3 creou a páxina "$2".
@@ -295,7 +295,7 @@ Per modificare le impostazioni delle notifiche via posta elettronica, visita
 $messages['ja'] = array(
 	'page-creation-notif-desc' => 'ページが作成されたら通知メールを送信する',
 	'page-creation-notification' => '新しいページが作成されたらメールを受け取る',
-	'page-creation-email-subject' => '新しいページ - $3が$2に$1を作成しました',
+	'page-creation-email-subject' => '新しいページ – $3が$2に$1を{{GENDER:$3|作成しました}}',
 	'page-creation-email-body' => '利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。', # Fuzzy
 );
 
@@ -356,7 +356,7 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'page-creation-notif-desc' => 'Испраќа известувања по е-пошта кога ќе се создадат нови страници',
 	'page-creation-notification' => 'Известувај ме по е-пошта кога некој ќе создаде нова страница',
-	'page-creation-email-subject' => 'Нова страница - На $2 создадена страницата „$1“ од $3',
+	'page-creation-email-subject' => 'Нова страница — На $2 {{GENDER:$2|создадена}} страницата „$1“ од $3',
 	'page-creation-email-body' => '{{Gender:$3|Почитуван|Почитуванa|Почитуван}} $1,
 
 Ве известуваме дека на {{SITENAME}} е создадена новата страница $2 од корисникот $3.
