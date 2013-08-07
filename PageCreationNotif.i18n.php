@@ -373,6 +373,22 @@ $5
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'page-creation-email-body' => 'प्रिय$1,
+ही {{SITENAME}}या संकेतस्थळाहून सूचना आहे कि सदस्य $3 मार्फत एक नविन पान{{GENDER:$3|तयार करण्यात आले आहे}}.
+आपण ते  $4 येथे बघु शकता
+
+त्या पानाचा मजकूर आहे:
+$5
+
+आपली मैत्रीपूर्ण{{SITENAME}} सूचना-प्रणाली
+
+आपले विपत्र सूचना मांडणी बदलवण्यासाठी {{canonicalurl:{{#special:पसंतीक्रम}}}}येथे भेट द्या.', # Fuzzy
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
