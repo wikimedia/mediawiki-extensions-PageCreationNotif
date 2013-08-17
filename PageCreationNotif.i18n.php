@@ -305,7 +305,7 @@ $messages['ja'] = array(
 $messages['ko'] = array(
 	'page-creation-notif-desc' => '새 문서가 만들어질 때 이메일 알림을 보냅니다',
 	'page-creation-notification' => '새 문서가 만들어질 때 내게 이메일 보내기',
-	'page-creation-email-subject' => '새 문서 - $3 사용자가 $2에 만든 $1',
+	'page-creation-email-subject' => '새 문서 - $1 문서를 $3 사용자가 $2에 {{GENDER:$3|만들었습니다}}',
 	'page-creation-email-body' => '$1님,
 
 {{SITENAME}}에서 $3 사용자가 $2 새 문서를 {{Gender:$3|만들었음}}을 알립니다.
@@ -444,7 +444,7 @@ Për modifiché soe ampostassion ëd notìfica për pòsta eletrònica, ch'a vì
 $messages['roa-tara'] = array(
 	'page-creation-notif-desc' => "Manne 'na mail de notifiche quanne le pàggene nuève avènene ccrejate",
 	'page-creation-notification' => "Manneme 'na mail quanne 'na pàgena nove avène ccrejate",
-	'page-creation-email-subject' => 'Pàgena nove - $1 ccrejate sus a $2 da $3',
+	'page-creation-email-subject' => 'Pàgena nove - $1 {{GENDER:$3|ccrejate}} sus a $2 da $3',
 	'page-creation-email-body' => "Care $1,
 
 Queste jè 'na notifiche da {{SITENAME}} ca 'na pàgena nove $2 ha state {{Gender:$3|ccrejate}} da l'utende $3.
@@ -461,12 +461,13 @@ Pe cangià le 'mbostaziune de le notifiche cu l'email, vèje a {{canonicalurl:{{
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Ата
  */
 $messages['uk'] = array(
 	'page-creation-notif-desc' => 'Відправляє повідомлення на електронну пошту, коли створюються нові сторінки',
 	'page-creation-notification' => 'Написати мені на електронну пошту, коли створюється нова сторінка',
-	'page-creation-email-subject' => '$3 створив нову сторінку у $2 — $1',
+	'page-creation-email-subject' => ' $3 {{GENDER:$3|створив|створила}} нову сторінку $1 на $2',
 	'page-creation-email-body' => 'Шановний $1,
 
 Це сповіщення з проекту {{SITENAME}} про те, що було {{Gender:$3|створено}} нову сторінку $2 користувачем $3.
