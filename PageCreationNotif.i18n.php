@@ -58,7 +58,7 @@ $messages['qqq'] = array(
 $messages['ast'] = array(
 	'page-creation-notif-desc' => 'Unvia un avisu per corréu electrónicu cuando se creen páxines nueves',
 	'page-creation-notification' => 'Unviame un corréu cuando se cree una páxina nueva',
-	'page-creation-email-subject' => 'Páxina nueva – $1 creada el $2 por $3',
+	'page-creation-email-subject' => 'Páxina nueva – $1 {{GENDER:$3|creada}} el $2 por $3',
 	'page-creation-email-body' => 'Bones, $1:
 
 Esti ye un avisu de {{SITENAME}} para informar de que {{GENDER:$3|l\'usuariu|la usuaria}} $3 creó la páxina "$2".
