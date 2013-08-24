@@ -13,8 +13,8 @@ $messages = array();
  * @author Nischayn22
  */
 $messages['en'] = array(
-	'page-creation-notif-desc'  => 'Sends e-mail notification when new pages are created',
-	'page-creation-notification' => 'E-mail me when a new page is created',
+	'page-creation-notif-desc'  => 'Sends email notification when new pages are created',
+	'page-creation-notification' => 'Email me when a new page is created',
 	'page-creation-email-subject' => 'New page – $1 {{GENDER:$3|created}} on $2 by $3',
 	'page-creation-email-body'  => 'Dear $1,
 
@@ -28,7 +28,7 @@ $5
 
 Your friendly {{SITENAME}} notification system.
 
-To change your e-mail notification settings, visit
+To change your email notification settings, visit
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
