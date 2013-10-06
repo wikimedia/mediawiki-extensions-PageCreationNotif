@@ -460,6 +460,15 @@ Statte bbuène, 'u sisteme de notifiche de {{SITENAME}}.
 Pe cangià le 'mbostaziune de le notifiche cu l'email, vèje a {{canonicalurl:{{#special:Preferences}}}}",
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'page-creation-notif-desc' => 'Отправляет уведомление по электронной почте при создании новых страниц',
+	'page-creation-notification' => 'Отправить мне письмо, когда будет создана новая страница',
+	'page-creation-email-subject' => 'Новая страница $1 {{GENDER:$3|создана}} в $2 {{GENDER:$3|участником|участницей}} $3',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  * @author Ата
