@@ -160,7 +160,7 @@ Um Ihre E-Mail-Benachrichtigungseinstellungen zu ändern, besuchen Sie bitte
 $messages['dsb'] = array(
 	'page-creation-notif-desc' => 'Sćelo e-mailowu powěźeńku, gaž se nowe boki napóraju',
 	'page-creation-notification' => 'E-mail pósłaś, gaž se nowy bok napórajo',
-	'page-creation-email-subject' => 'Nowy bok - $1 jo se na $2 wót $3 napórał',
+	'page-creation-email-subject' => 'Nowy bok - $1 jo se na $2 wót $3 napórał', # Fuzzy
 	'page-creation-email-body' => 'Witaj $1,
 
 To jo zdźělenje wót {{GRAMMAR:genitiw|{{SITENAME}}}}, až wužywaŕ $3 jo {{GENDER:$3|napórał|napórała}} nowy bok $2.
@@ -183,7 +183,7 @@ Aby swóje nastajenja za e-mailowe zdźělenje změnił, woglědaj se k
 $messages['es'] = array(
 	'page-creation-notif-desc' => 'Envía una notificación por correo electrónico cuando se crean páginas nuevas',
 	'page-creation-notification' => 'Enviarme un mensaje cuando se cree una página nueva',
-	'page-creation-email-subject' => 'Página nueva – $1 creada el $2 por $3',
+	'page-creation-email-subject' => 'Página nueva – $1 creada el $2 por $3', # Fuzzy
 );
 
 /** French (français)
@@ -247,7 +247,7 @@ Para modificar as opcións de notificación por correo electrónico, visite
 $messages['hsb'] = array(
 	'page-creation-notif-desc' => 'Sćele e-mejlowe zdźělenje, hdyž so nowe strony wutworjeja',
 	'page-creation-notification' => 'E-mejlku pósłać, hdyž so nowa strona wutworja',
-	'page-creation-email-subject' => 'Nowa strona - $1 je so na $2 wot $3 wutworił',
+	'page-creation-email-subject' => 'Nowa strona - $1 je so na $2 wot $3 wutworił', # Fuzzy
 	'page-creation-email-body' => 'Witaj $1,
 
 To je zdźělenje wot {{GRAMMAR:genitiw|{{SITENAME}}}}, zo je wužiwar $3 nowu stronu $2 {{GENDER:$3|wutworił|wutworiła}}.
@@ -328,7 +328,7 @@ $5
 $messages['ksh'] = array(
 	'page-creation-notif-desc' => 'Scheck en <i lang="en">e-mail</i>, wann en neu Sigg aanjelaat wood.',
 	'page-creation-notification' => 'Scheck mer en <i lang="en">e-mail</i>, wann en neuje Sigg aanjelaat weed.',
-	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat {{GENDER:$2|vum|vum|vumm Metmaacher|vun dä|vum}} $3',
+	'page-creation-email-subject' => 'Neu Sigg „$1“ {{GRAMMAR:em|{{ucfirst:$2}}}} aanjelaat {{GENDER:$2|vum|vum|vumm Metmaacher|vun dä|vum}} $3', # Fuzzy
 	'page-creation-email-body' => 'Leeven $1,
 
 En neu Sigg „$2“ wood {{GENDER:$3|vum|vum|vum_Metmaacher|vun dä|vum}} $2 {{GRAMMAR:em|{{ucfirst:{{SITENAME}}}}}} aanjelaat un kann onger $4 beloort wääde. Dat hehh schteiht drop:
@@ -421,7 +421,7 @@ Op {{canonicalurl:{{#special:Preferences}}}} kunt u uw instellingen voor melding
 $messages['pms'] = array(
 	'page-creation-notif-desc' => 'A manda un mëssagi ëd notìfica quand che ëd neuve pàgine a son creà',
 	'page-creation-notification' => "Mandeme un mëssagi quand na neuva pàgina a l'é creà",
-	'page-creation-email-subject' => 'Pàgine neuva - $1 creà dzor $2 da $3',
+	'page-creation-email-subject' => 'Pàgine neuva - $1 creà dzor $2 da $3', # Fuzzy
 	'page-creation-email-body' => "Car $1,
 
 Costa a l'é na notìfica da {{SITENAME}} che na pàgina neuva $2 a l'é stàita {{Gender:$3|creà}} da l'utent $3.
@@ -499,7 +499,7 @@ $5
 $messages['zh-hans'] = array(
 	'page-creation-notif-desc' => '当创建新页面时发送电子邮件通知',
 	'page-creation-notification' => '当创建了一个新页面时发电子邮件给我',
-	'page-creation-email-subject' => '新的页面 - $1 由 $3 创建在 $2',
+	'page-creation-email-subject' => '新的页面 - $1 由 $3 创建在 $2', # Fuzzy
 	'page-creation-email-body' => '您好 $1，
 
 本通知来自 {{SITENAME}}，一个新页面 $2 已被{{Gender:$3|创建}}由用户 $3。
