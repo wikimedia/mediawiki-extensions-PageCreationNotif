@@ -483,6 +483,15 @@ $5
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
+/** Swedish (svenska)
+ * @author Jopparn
+ */
+$messages['sv'] = array(
+	'page-creation-notif-desc' => 'Skickar e-mail-meddelande när nya sidor skapas',
+	'page-creation-notification' => 'E-maila mig när en ny sida skapas',
+	'page-creation-email-subject' => 'Ny sida - $1 {{GENDER:$3|skapad}} på $2 av $3',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  * @author Ата
