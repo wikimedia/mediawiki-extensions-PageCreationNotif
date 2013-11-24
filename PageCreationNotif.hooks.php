@@ -46,17 +46,19 @@ final class PageCreationNotifHooks {
 	public static function onUserSaveOptions( User $user, array &$options ) {
 		$dbw = wfGetDB( DB_MASTER );
 
-		$dbw->replace(
-			'pcn_users',
-			array(
-				'pcn_user_id'
-			),
-			array(
-				'pcn_user_id' => $user->getId(),
-				'pcn_notify' => $options['page_creation_notif'] ? 1 : 0
-			),
-			__METHOD__
-		);
+		if ( $user && isset( $options['page_creation_notif'] ) ) {
+			$dbw->replace(
+				'pcn_users',
+				array(
+					'pcn_user_id'
+				),
+				array(
+					'pcn_user_id' => $user->getId(),
+					'pcn_notify' => $options['page_creation_notif'] ? 1 : 0
+				),
+				__METHOD__
+			);
+		}
 
 		return true;
 

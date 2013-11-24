@@ -33,6 +33,9 @@ then edit LocalSettings.php and add the following line
 
 	include_once("$IP/extensions/PageCreationNotif/PageCreationNotif.php");
 
+Then run the update script:
+	php maintenance/update.php
+
 == 4. Configuration ==
 
 The behaviour of the extension can be tweaked using configuration
