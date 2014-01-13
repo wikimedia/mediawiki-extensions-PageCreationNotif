@@ -184,7 +184,7 @@ Aby swóje nastajenja za e-mailowe zdźělenje změnił, woglědaj se k
 $messages['es'] = array(
 	'page-creation-notif-desc' => 'Envía una notificación por correo electrónico cuando se crean páginas nuevas',
 	'page-creation-notification' => 'Enviarme un mensaje cuando se cree una página nueva',
-	'page-creation-email-subject' => 'Página nueva – $1 {{GENDER:$3|creada}} el $2 por $3',
+	'page-creation-email-subject' => 'Página nueva: $1 creada el $2 por $3',
 );
 
 /** French (français)
