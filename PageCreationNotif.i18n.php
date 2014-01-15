@@ -265,6 +265,28 @@ Zo by swoje nastajenja za e-mejlowe zdźělenje změnił, wopytaj
 {{canonicalurl:{{#special:Preferences}}}}',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author StefanusRA
+ */
+$messages['id'] = array(
+	'page-creation-notif-desc' => 'Mengirim surel pemberitahuan ketika halaman baru dibuat',
+	'page-creation-notification' => 'Kirimi saya surel ketika sebuah halaman dibuat',
+	'page-creation-email-subject' => 'Halaman baru – $1 {{GENDER:$3|dibuat}} pada $2 oleh $3',
+	'page-creation-email-body' => 'Halo $1,
+
+Ini adalah pemberitahuan dari {{SITENAME}} bahwa halaman baru $2 telah {{GENDER:$3|dibuat}} oleh pengguna $3.
+
+Anda dapat melihatnya di
+$4
+
+Teks dari halanan tersebut adalah:
+$5
+
+Sistem notifikasi {{SITENAME}} Anda yang ramah.
+
+Untuk mengubah pengaturan surel pemberitahuan Anda, kunjungi {{canonicalurl:{{#special:Preferences}}}}',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
