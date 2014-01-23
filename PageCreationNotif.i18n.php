@@ -187,6 +187,14 @@ $messages['es'] = array(
 	'page-creation-email-subject' => 'Página nueva: $1 creada el $2 por $3',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'page-creation-notification' => 'هنگامی که صفحه‌ای جدید ایجا شده‌است به من رایانامه بزنید',
+	'page-creation-email-subject' => 'صفحهٔ جدید – $1 {{GENDER:$3|ایجاد شده}} بر $2 توسط $3',
+);
+
 /** French (français)
  * @author Gomoko
  */
