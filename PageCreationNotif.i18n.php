@@ -189,6 +189,7 @@ $messages['es'] = array(
 
 /** Persian (فارسی)
  * @author Armin1392
+ * @author Ebraminio
  */
 $messages['fa'] = array(
 	'page-creation-notif-desc' => 'فرستادن اعلان رایانامه هنگامی که صفحات جدیدی ایجاد شده‌است',
@@ -196,11 +197,14 @@ $messages['fa'] = array(
 	'page-creation-email-subject' => 'صفحهٔ جدید – $1 {{GENDER:$3|ایجاد شده}} بر $2 توسط $3',
 	'page-creation-email-body' => 'عزیز $1،
 این اعلانی است از {{SITENAME}} که صفحهٔ جدید $2 توسط کاربر $3 {{GENDER:$3|ایجاد شده}}.
+
 شما می‌توانید این را در  مشاهده کنید
 $4
-متن صفحه هست:
+
+متن صفحه است:
 $5
-سیستم اعلان {{SITENAME}} دوستانهٔ شما.
+
+سامانهٔ اعلان {{SITENAME}} دوستانهٔ شما.
 برای تغییر تنظیمات اعلان رایانامهٔ خود، {{canonicalurl:{{#special:Preferences}}}} را مشاهده کنید',
 );
 
