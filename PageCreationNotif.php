@@ -11,7 +11,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @licence GNU GPL v3 or later
  */
 
-define( 'PageCreationNotif_VERSION', '0.1 beta' );
+define( 'PageCreationNotif_VERSION', '0.2.0 beta' );
 
 $wgExtensionCredits['semantic'][] = array(
 	'path' => __FILE__,
@@ -26,6 +26,7 @@ $wgExtensionCredits['semantic'][] = array(
 
 
 // Translation
+$wgMessagesDirs['PageCreationNotif'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PageCreationNotif'] = dirname(__FILE__) . '/PageCreationNotif.i18n.php';
 
 // Autoloading classes
