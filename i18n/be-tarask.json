@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Wizardist"
-        ]
-    },
-    "page-creation-notif-desc": "Дасылае e-mail-абвестку па стварэньні новых старонак",
-    "page-creation-notification": "Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка"
+	"@metadata": {
+		"authors": [
+			"Wizardist"
+		]
+	},
+	"page-creation-notif-desc": "Дасылае e-mail-абвестку па стварэньні новых старонак",
+	"page-creation-notification": "Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка"
 }

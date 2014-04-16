@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki"
-        ]
-    },
-    "page-creation-notif-desc": "ページが作成されたら通知メールを送信する",
-    "page-creation-notification": "新しいページが作成されたらメールを受け取る",
-    "page-creation-email-subject": "新しいページ – $3が$2に$1を{{GENDER:$3|作成しました}}",
-    "page-creation-email-body": "利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。"
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"page-creation-notif-desc": "ページが作成されたら通知メールを送信する",
+	"page-creation-notification": "新しいページが作成されたらメールを受け取る",
+	"page-creation-email-subject": "新しいページ – $3が$2に$1を{{GENDER:$3|作成しました}}",
+	"page-creation-email-body": "利用者 $2 が $3 で新しいページ $1 を作成しました。このページは $4 で閲覧できます。"
 }
