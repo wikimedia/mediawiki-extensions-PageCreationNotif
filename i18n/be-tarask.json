@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
 	"page-creation-notif-desc": "Дасылае e-mail-абвестку па стварэньні новых старонак",
-	"page-creation-notification": "Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка"
+	"page-creation-notification": "Апавяшчаць мяне праз e-mail, калі ствараецца новая старонка",
+	"page-creation-email-subject": "Новая старонка $1 створаная ў $2 {{GENDER:$3|удзельнікам|удзельніцай}} $3"
 }
