@@ -52,8 +52,7 @@ class PageCreationNotifEmailer {
 				new MailAddress( $wgPCNSender, $wgPCNSenderName ),
 				$subject,
 				$emailText,
-				null,
-				'text/html; charset=ISO-8859-1'
+				array( 'contentType' => 'text/html; charset=ISO-8859-1' )
 			);
 			// die silently ignoring the status message
 		}
