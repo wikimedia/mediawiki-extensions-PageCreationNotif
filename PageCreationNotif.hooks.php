@@ -89,13 +89,24 @@ final class PageCreationNotifHooks {
 	}
 
 	/**
-	 * Called just after a new Article is created.
+	 * Called just after a new WikiPage is created.
 	 *
+	 * @param WikiPage $wikiPage
+	 * @param User $user
+	 * @param Content $content
+	 * @param string $summary
+	 * @param bool $isMinor
+	 * @param $isWatch
+	 * @param $section
+	 * @param $flags
+	 * @param Revision $revision
+	 *
+	 * @return bool
 	 * @since 0.1
 	 */
-	public static function onArticleInsertComplete( &$article, User &$user, $text, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, Revision 
-	$revision ) {
-		PageCreationNotifEmailer::notifyOnNewArticle( $article, $user );
+	public static function onPageContentInsertComplete( $wikiPage, $user, $content, $summary, $isMinor,
+		$isWatch, $section, $flags, $revision ) {
+		PageCreationNotifEmailer::notifyOnNewWikiPage( $wikiPage, $user );
 
 		return true;
 	}

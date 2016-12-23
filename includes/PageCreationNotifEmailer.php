@@ -20,7 +20,7 @@ class PageCreationNotifEmailer {
 	 * @since 0.1
 	 *
 	 */
-	public static function notifyOnNewArticle( $article, $creator ) {
+	public static function notifyOnNewWikiPage( $wikiPage, $creator ) {
 		global $wgPCNSender, $wgPCNSenderName;
 
 		$users = self::getNotifUsers();
@@ -33,7 +33,7 @@ class PageCreationNotifEmailer {
 
 			$subject = wfMessage(
 				'page-creation-email-subject',
-				$article->getTitle()->getFullText(),
+				$wikiPage->getTitle()->getFullText(),
 				$GLOBALS['wgSitename'],
 				$creator->getName()
 			)->parse();
@@ -41,10 +41,10 @@ class PageCreationNotifEmailer {
 			$emailText = wfMessage(
 				'page-creation-email-body',
 				$user->getName(),
-				$article->getTitle()->getFullText(),
+				$wikiPage->getTitle()->getFullText(),
 				$creator->getName(),
-				$article->getTitle()->getFullURL(),
-				$article->getText()
+				$wikiPage->getTitle()->getFullURL(),
+				ContentHandler::getContentText( $wikiPage->getContent() )
 			)->parse();
 
 			UserMailer::send(

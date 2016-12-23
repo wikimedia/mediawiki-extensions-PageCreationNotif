@@ -37,7 +37,7 @@ $wgAutoloadClasses['PageCreationNotifEmailer'] = dirname(__FILE__) . '/includes/
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'PageCreationNotifHooks::onSchemaUpdate';
 $wgHooks['GetPreferences'][] = 'PageCreationNotifHooks::onGetPreferences';
 $wgHooks['UserSaveOptions'][] = 'PageCreationNotifHooks::onUserSaveOptions';
-$wgHooks['ArticleInsertComplete'][] = 'PageCreationNotifHooks::onArticleInsertComplete';
+$wgHooks['PageContentInsertComplete'][] = 'PageCreationNotifHooks::onPageContentInsertComplete';
 
 /**
  * Email address to use as the sender
