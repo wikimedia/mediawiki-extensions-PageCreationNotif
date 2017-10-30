@@ -27,7 +27,6 @@ $wgExtensionCredits['semantic'][] = array(
 
 // Translation
 $wgMessagesDirs['PageCreationNotif'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['PageCreationNotif'] = dirname(__FILE__) . '/PageCreationNotif.i18n.php';
 
 // Autoloading classes
 $wgAutoloadClasses['PageCreationNotifHooks'] = dirname( __FILE__ ) . '/PageCreationNotif.hooks.php';
