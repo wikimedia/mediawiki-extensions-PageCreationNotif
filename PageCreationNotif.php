@@ -18,7 +18,7 @@ $wgExtensionCredits['semantic'][] = array(
 	'name' => 'Page Creation Notification',
 	'version' => PageCreationNotif_VERSION,
 	'author' => array(
-		'[http://www.mediawiki.org/wiki/User:Nischayn22 Nischay Nahata] for [http://www.wikiworks.com/ WikiWorks]',
+		'[https://www.mediawiki.org/wiki/User:Nischayn22 Nischay Nahata] for [http://www.wikiworks.com/ WikiWorks]',
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:',
 	'descriptionmsg' => 'page-creation-notif-desc'
