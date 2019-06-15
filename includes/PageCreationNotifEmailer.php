@@ -66,7 +66,7 @@ class PageCreationNotifEmailer {
 	 * @return Array of User objects
 	 */
 	public static function getNotifUsers() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$rows = $dbr->select(
 			'pcn_users',
