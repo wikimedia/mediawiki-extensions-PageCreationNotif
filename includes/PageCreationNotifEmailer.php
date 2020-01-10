@@ -8,7 +8,7 @@
  * @file PageCreationNotifEmailer.php
  * @ingroup PageCreationNotif
  *
- * @licence GNU GPL v3 or later
+ * @license GPL-3.0-or-later
  * @author Nischay Nahata < nischayn22@gmail.com >
  */
 class PageCreationNotifEmailer {
@@ -25,9 +25,9 @@ class PageCreationNotifEmailer {
 
 		$users = self::getNotifUsers();
 
-		foreach( $users as $user ) {
+		foreach ( $users as $user ) {
 
-			if( $user->getId() === $creator->getId() ) {
+			if ( $user->getId() === $creator->getId() ) {
 				continue;
 			}
 
@@ -52,7 +52,7 @@ class PageCreationNotifEmailer {
 				new MailAddress( $wgPCNSender, $wgPCNSenderName ),
 				$subject,
 				$emailText,
-				array( 'contentType' => 'text/html; charset=ISO-8859-1' )
+				[ 'contentType' => 'text/html; charset=ISO-8859-1' ]
 			);
 			// die silently ignoring the status message
 		}
@@ -70,15 +70,15 @@ class PageCreationNotifEmailer {
 
 		$rows = $dbr->select(
 			'pcn_users',
-			array(
+			[
 				'pcn_user_id'
-			),
-			array(
+			],
+			[
 				'pcn_notify' => 1
-			)
+			]
 		);
 
-		$users = array();
+		$users = [];
 
 		foreach ( $rows as $row ) {
 			$users[] = User::newFromId( intval( $row->pcn_user_id ) );

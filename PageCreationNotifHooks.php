@@ -5,31 +5,30 @@
  *
  * @since 0.1
  *
- * @file PageCreationNotif.hooks.php
+ * @file PageCreationNotifHooks.php
  * @ingroup PageCreationNotif
  *
- * @licence GNU GPL v3 or later
+ * @license GPL-3.0-or-later
  * @author Nischay Nahata < nischayn22@gmail.com >
  */
 final class PageCreationNotifHooks {
 
-    /**
-     * Adds the preferences of Page Creation Notification to the list of available ones.
-     *
-     * @since 0.1
-     *
-     * @param User $user
-     * @param array $preferences
-     *
-     * @return true
-     */
+	/**
+	 * Adds the preferences of Page Creation Notification to the list of available ones.
+	 *
+	 * @since 0.1
+	 *
+	 * @param User $user
+	 * @param array &$preferences
+	 *
+	 * @return true
+	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
-
-		$preferences['page_creation_notif'] = array(
+		$preferences['page_creation_notif'] = [
 			'type' => 'check',
 			'label-message' => 'page-creation-notification',
 			'section' => 'personal/email'
-		);
+		];
 		return true;
 	}
 
@@ -39,7 +38,7 @@ final class PageCreationNotifHooks {
 	 * @since 0.1
 	 *
 	 * @param User $user
-	 * @param array $options
+	 * @param array &$options
 	 *
 	 * @return true
 	 */
@@ -49,19 +48,18 @@ final class PageCreationNotifHooks {
 		if ( $user && isset( $options['page_creation_notif'] ) ) {
 			$dbw->replace(
 				'pcn_users',
-				array(
+				[
 					'pcn_user_id'
-				),
-				array(
+				],
+				[
 					'pcn_user_id' => $user->getId(),
 					'pcn_notify' => $options['page_creation_notif'] ? 1 : 0
-				),
+				],
 				__METHOD__
 			);
 		}
 
 		return true;
-
 	}
 
 	/**
@@ -69,20 +67,20 @@ final class PageCreationNotifHooks {
 	 *
 	 * @since 0.1
 	 *
-	 * @param DatabaseUpdater $updater
+	 * @param DatabaseUpdater|null $updater
 	 *
 	 * @return true
 	 */
-	public static function onSchemaUpdate( /* DatabaseUpdater */ $updater = null ) {
+	public static function onSchemaUpdate( $updater = null ) {
 		global $wgDBtype;
 
 		if ( $wgDBtype == 'mysql' ) {
-            $updater->addExtensionUpdate( array(
-                'addTable',
-                'pcn_users',
-                dirname( __FILE__ ) . '/PageCreationNotif.sql',
-                true
-            ) );
+			$updater->addExtensionUpdate( [
+				'addTable',
+				'pcn_users',
+				__DIR__ . '/PageCreationNotif.sql',
+				true
+			] );
 		}
 
 		return true;

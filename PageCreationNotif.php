@@ -5,7 +5,7 @@
  * @file
  * @author Nischay Nahata <nischayn22@gmail.com> for Wikiworks
  * @ingroup Extensions
- * @licence GNU GPL v3 or later
+ * @license GPL-3.0-or-later
  */
 
 if ( function_exists( 'wfLoadExtension' ) ) {
