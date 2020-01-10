@@ -16,7 +16,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"PageCreationNotifHooks": "PageCreationNotif.hooks.php",
+		"PageCreationNotifHooks": "PageCreationNotifHooks.php",
 		"PageCreationNotifEmailer": "includes/PageCreationNotifEmailer.php"
 	},
 	"Hooks": {
