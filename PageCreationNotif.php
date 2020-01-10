@@ -1,7 +1,4 @@
 <?php
-if ( ! defined( 'MEDIAWIKI' ) )
-    die();
-
 /**
  * Extension to send email notifications to users on page creation
  *
@@ -11,39 +8,16 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @licence GNU GPL v3 or later
  */
 
-define( 'PageCreationNotif_VERSION', '0.2.0 beta' );
-
-$wgExtensionCredits['semantic'][] = array(
-	'path' => __FILE__,
-	'name' => 'Page Creation Notification',
-	'version' => PageCreationNotif_VERSION,
-	'author' => array(
-		'[https://www.mediawiki.org/wiki/User:Nischayn22 Nischay Nahata] for [http://www.wikiworks.com/ WikiWorks]',
-	),
-	'url' => 'https://www.mediawiki.org/wiki/Extension:PageCreationNotif',
-	'descriptionmsg' => 'page-creation-notif-desc'
-);
-
-
-// Translation
-$wgMessagesDirs['PageCreationNotif'] = __DIR__ . '/i18n';
-
-// Autoloading classes
-$wgAutoloadClasses['PageCreationNotifHooks'] = dirname( __FILE__ ) . '/PageCreationNotif.hooks.php';
-$wgAutoloadClasses['PageCreationNotifEmailer'] = dirname(__FILE__) . '/includes/PageCreationNotifEmailer.php';
-
-// Hooks
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'PageCreationNotifHooks::onSchemaUpdate';
-$wgHooks['GetPreferences'][] = 'PageCreationNotifHooks::onGetPreferences';
-$wgHooks['UserSaveOptions'][] = 'PageCreationNotifHooks::onUserSaveOptions';
-$wgHooks['PageContentInsertComplete'][] = 'PageCreationNotifHooks::onPageContentInsertComplete';
-
-/**
- * Email address to use as the sender
- */
-$wgPCNSender = $wgPasswordSender;
-
-/**
- * Name used as the sender
- */
-$wgPCNSenderName = $wgPasswordSenderName;
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'PageCreationNotif' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['PageCreationNotif'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for the PageCreationNotif extension. ' .
+		'Please use wfLoadExtension() instead, ' .
+		'see https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the PageCreationNotif extension requires MediaWiki 1.29+' );
+}
