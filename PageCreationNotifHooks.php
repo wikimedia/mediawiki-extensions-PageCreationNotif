@@ -48,9 +48,7 @@ final class PageCreationNotifHooks {
 		if ( $user && isset( $options['page_creation_notif'] ) ) {
 			$dbw->replace(
 				'pcn_users',
-				[
-					'pcn_user_id'
-				],
+				'pcn_user_id',
 				[
 					'pcn_user_id' => $user->getId(),
 					'pcn_notify' => $options['page_creation_notif'] ? 1 : 0
