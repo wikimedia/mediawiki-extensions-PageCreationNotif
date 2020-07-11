@@ -92,9 +92,9 @@ final class PageCreationNotifHooks {
 	 * @param Content $content
 	 * @param string $summary
 	 * @param bool $isMinor
-	 * @param $isWatch
-	 * @param $section
-	 * @param $flags
+	 * @param null $isWatch
+	 * @param null $section
+	 * @param int $flags
 	 * @param Revision $revision
 	 *
 	 * @return bool

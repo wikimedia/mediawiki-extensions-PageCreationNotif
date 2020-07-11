@@ -18,7 +18,8 @@ class PageCreationNotifEmailer {
 	 * creation of a new article.
 	 *
 	 * @since 0.1
-	 *
+	 * @param WikiPage $wikiPage
+	 * @param User $creator
 	 */
 	public static function notifyOnNewWikiPage( $wikiPage, $creator ) {
 		global $wgPCNSender, $wgPCNSenderName;
@@ -63,7 +64,7 @@ class PageCreationNotifEmailer {
 	 *
 	 * @since 0.1
 	 *
-	 * @return Array of User objects
+	 * @return User[]
 	 */
 	public static function getNotifUsers() {
 		$dbr = wfGetDB( DB_REPLICA );
