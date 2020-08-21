@@ -14,6 +14,19 @@
 final class PageCreationNotifHooks {
 
 	/**
+	 * Register hooks depending on version
+	 */
+	public static function registerExtension() {
+		global $wgHooks;
+		if ( class_exists( MediaWiki\HookContainer\HookContainer::class ) ) {
+			// MW 1.35+
+			$wgHooks['PageSaveComplete'][] = 'PageCreationNotifHooks::onPageContentInsertComplete';
+		} else {
+			$wgHooks['PageContentInsertComplete'][] = 'PageCreationNotifHooks::onPageContentInsertComplete';
+		}
+	}
+
+	/**
 	 * Adds the preferences of Page Creation Notification to the list of available ones.
 	 *
 	 * @since 0.1
@@ -89,19 +102,11 @@ final class PageCreationNotifHooks {
 	 *
 	 * @param WikiPage $wikiPage
 	 * @param User $user
-	 * @param Content $content
-	 * @param string $summary
-	 * @param bool $isMinor
-	 * @param null $isWatch
-	 * @param null $section
-	 * @param int $flags
-	 * @param Revision $revision
 	 *
 	 * @return bool
 	 * @since 0.1
 	 */
-	public static function onPageContentInsertComplete( $wikiPage, $user, $content, $summary, $isMinor,
-		$isWatch, $section, $flags, $revision ) {
+	public static function onPageContentInsertComplete( $wikiPage, $user ) {
 		PageCreationNotifEmailer::notifyOnNewWikiPage( $wikiPage, $user );
 
 		return true;
