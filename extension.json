@@ -15,6 +15,7 @@
 			"i18n"
 		]
 	},
+	"callback": "PageCreationNotifHooks::registerExtension",
 	"AutoloadClasses": {
 		"PageCreationNotifHooks": "PageCreationNotifHooks.php",
 		"PageCreationNotifEmailer": "includes/PageCreationNotifEmailer.php"
@@ -22,8 +23,7 @@
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "PageCreationNotifHooks::onSchemaUpdate",
 		"GetPreferences": "PageCreationNotifHooks::onGetPreferences",
-		"UserSaveOptions": "PageCreationNotifHooks::onUserSaveOptions",
-		"PageContentInsertComplete": "PageCreationNotifHooks::onPageContentInsertComplete"
+		"UserSaveOptions": "PageCreationNotifHooks::onUserSaveOptions"
 	},
 	"config": {
 		"PCNSender": {
