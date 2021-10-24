@@ -31,7 +31,7 @@ This extension requires MediaWiki 1.19.0 or later.
 To install the extension, place the extension directory in your MediaWiki's extensions/ directory,
 then edit LocalSettings.php and add the following line
 
-	include_once("$IP/extensions/PageCreationNotif/PageCreationNotif.php");
+	wfLoadExtension( 'PageCreationNotif' );
 
 Then run the update script:
 	php maintenance/update.php
