@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"page-creation-notif-desc": "Siunčia el. pašto pranešimus, kai sukuriami nauji puslapiai",
+	"page-creation-notification": "Pranešti man, kai sukuriamas naujas puslapis",
+	"page-creation-email-subject": "Naujas puslapis – $3 {{GENDER:$3|sukūrė}} $1, $2",
+	"page-creation-email-body": "Gerb. $1,\n\nTai pranešimas iš {{SITENAME}}, kad $3 {{GENDER:$3|sukūrė}} naują puslapį $2.\n\nGalite jį pamatyti čia\n$4 \n\nPuslapio tekstas:\n$5 \n\nJūsų draugiška {{SITENAME}} pranešimų sistema.\n\nJei norite pakeisti el. pašto pranešimų nustatymus, apsilankykite\n{{canonicalurl:{{#special:Preferences}}}}"
+}
