@@ -8,5 +8,5 @@
 	"page-creation-notif-desc": "Pošlje e-poštno obvestilo, ko so ustvarjene nove strani",
 	"page-creation-notification": "Pošlji mi e-pošto, ko je ustvarjena nova stran",
 	"page-creation-email-subject": "Nova stran – $3 je {{GENDER:$3|ustvaril|ustvarila|ustvaril_a}} stran »$1« v projektu $2",
-	"page-creation-email-body": "Spoštovani $1,\n\nTo je obvestilo projekta {{SITENAME}}, da je {{GENDER:$3|uporabnik $3 ustvaril|uporabnica $3 ustvarila|uporabnik/ca $3 ustvaril/a}} novo stran $2.\n\nOgledate si jo lahko na\n$4 \n\nBesedilo strani je:\n$5 \n\nVaš prijazni sistem obveščanja {{SITENAME}}.\n\nZa spremembo nastavitev obveščanja po e-pošti obiščite\n{{canonicalurl:{{#special:Preferences}}}}"
+	"page-creation-email-body": "Spoštovani $1,\n\nTo je obvestilo projekta {{SITENAME}}, da je {{GENDER:$3|uporabnik $3 ustvaril|uporabnica $3 ustvarila|uporabnik_ca $3 ustvaril_a}} novo stran $2.\n\nOgledate si jo lahko na\n$4 \n\nBesedilo strani je:\n$5 \n\nVaš prijazni sistem obveščanja {{SITENAME}}.\n\nZa spremembo nastavitev obveščanja po e-pošti obiščite\n{{canonicalurl:{{#special:Preferences}}}}"
 }
